@@ -32,7 +32,7 @@ function App() {
   };
 
   const handlePauseClick = () => {
-    setPaused(true); // Pause the timer
+    setPaused((prevPaused) => !prevPaused); // Toggle pause state
   };
 
   const formatTime = (time: number) => {
